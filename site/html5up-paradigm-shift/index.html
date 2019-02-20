@@ -386,7 +386,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 						</header>
 						<div class="content">
 							<!-- <p><strong>Auctor commodo</strong> interdum et malesuada fames ac ante ipsum p</p> -->
-							<form>
+							<form method="post" action="script.php">
 								<div class="fields">
 									<div class="field half">
 										<input type="text" name="nome" id="name" placeholder="Nome" />
@@ -398,8 +398,8 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 										<textarea name="assunto" id="message" placeholder="Mensagem" rows="7"></textarea>
 									</div>
 								</div>
-								<ul class="actions">
-									<li><input type="submit" name="enviar" value="Envie sua mensagem" class="button primary" /></li>
+								<ul class="actions special">
+									<li><input type="submit" name="enviar" value="Envie sua mensagem" class="button primary" /> <span class="error">* <?php echo $emailErr;?></span></li>
 								</ul>
 							</form>
 						</div>
